@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { FormControlLabel, Switch } from "@mui/material";
+import theme from "./theme1.png"
 
 export default function Nav(props) {
   const [ldcheck, setLdcheck] = React.useState(false);
@@ -24,10 +25,11 @@ export default function Nav(props) {
                 color="secondary"
                 onChange={handlechange}
                 checked={ldcheck}
-              />
-            }
-            label="Theme"
+                />
+              }
+            // label="Theme"
           />
+              <img src={theme} alt="theme" height="40px" />
         </Toolbar>
       </AppBar>
     </Box>

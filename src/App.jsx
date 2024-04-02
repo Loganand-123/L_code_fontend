@@ -3,9 +3,13 @@ import React, { useState } from "react";
 import "./App.css";
 import New from "./New";
 import Nav from "./base/Nav";
+import Nav1 from "./base/Nav1";
 // import { colors, createTheme } from '@mui/material';
 import { CssBaseline, ThemeProvider, colors, createTheme } from "@mui/material";
 import Home from "./pages/HomeF/Home";
+import AboutUs from "./pages/HomeF/AboutUs";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from "./base/layout"
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,10 +40,20 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Nav check={handlecheck} />
+        {/* <Nav check={handlecheck} />
         <Home/>
-        <New />
+        <New /> */}
+            <Router>
+      
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home/>} />
+          <Route path="Home" element={<Home />} />
+          <Route path="AboutUs" element={<AboutUs/>}/>
+        </Route>
+      </Routes>
         
+      </Router>
       </ThemeProvider>
     </>
   );
