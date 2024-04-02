@@ -5,7 +5,7 @@ export default function Addarea() {
   return (
       <div>Addarea
           <Box >
-              <Typography>Add 1</Typography>
+              <Typography>Add1</Typography>
           </Box>
     </div>
   )
