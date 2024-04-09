@@ -1,12 +1,16 @@
-import { Box,Typography } from '@mui/material'
 import React from 'react'
+import { Box,Typography } from '@mui/material'
 
-export default function Addarea() {
+function Addarea() {
   return (
-      <div>Addarea
-          <Box >
+    <section id="addarea" className='addarea'>
+        <h1>AddArea</h1>
+      <Box >
               <Typography>Add 1</Typography>
           </Box>
-    </div>
+    </section>
   )
 }
+
+export default Addarea
+

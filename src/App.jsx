@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-
 import "./App.css";
-import New from "./New";
-import Nav from "./base/Nav";
 import Nav1 from "./base/Nav1";
-// import { colors, createTheme } from '@mui/material';
-import { CssBaseline, ThemeProvider, colors, createTheme } from "@mui/material";
+import Footer from "./base/Footer";
 import Home from "./pages/HomeF/Home";
+import CustomerReviews from "./pages/HomeF/CustomerReview";
+import "font-awesome/css/font-awesome.min.css";
+import CardDetails from "./pages/HomeF/CardDetails";
 import AboutUs from "./pages/HomeF/AboutUs";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from "./base/layout"
+import New from "./New"
+import Addarea from "./pages/HomeF/Addarea";
+import { CssBaseline, ThemeProvider, colors, createTheme } from "@mui/material";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const handlecheck = (data) => {
-    setDarkMode(data);
+  const handlecheck = (ldcheck) => {
+    setDarkMode(ldcheck);
   };
 
   const theme = createTheme({
@@ -40,20 +40,18 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        {/* <Nav check={handlecheck} />
+        <Nav1 check={handlecheck} />
         <Home/>
-        <New /> */}
-            <Router>
-      
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home/>} />
-          <Route path="Home" element={<Home />} />
-          <Route path="AboutUs" element={<AboutUs/>}/>
-        </Route>
-      </Routes>
-        
-      </Router>
+        <New />
+        <div style={{ position: "relative" }}>
+            <Nav1 />
+            <Home />
+            <CardDetails/>
+            <CustomerReviews />
+            <AboutUs />
+            <Footer />
+           
+          </div>
       </ThemeProvider>
     </>
   );
