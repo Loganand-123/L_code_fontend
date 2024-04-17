@@ -1,12 +1,20 @@
-import { Box,Typography } from '@mui/material'
-import React from 'react'
+import React from "react";
+import { Box, Typography } from "@mui/material";
 
-export default function Addarea() {
+function Addarea() {
   return (
-      <div>Addarea
-          <Box >
-              <Typography>Add 1</Typography>
-          </Box>
-    </div>
-  )
+    <Box>
+      <Box>
+        {/* <Typography>Add 1</Typography> */}
+        <img
+          src="assets/image/add1.jpg"
+          alt="Girl in a jacket"
+          height="400px"
+          width="800px"
+        />
+      </Box>
+    </Box>
+  );
 }
+
+export default Addarea;
