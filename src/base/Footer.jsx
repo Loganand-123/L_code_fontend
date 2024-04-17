@@ -13,13 +13,16 @@ function Footer() {
         <a href="#" className="btn">
           instagram
         </a>
-        <a href="#" className="btn">
+        <a href="#" className="btn" >
           linkedin
         </a>
       </div>
-      <h1 className="credit">
+      <h4
+        className="credit"
+        // style={{fontSize:"16px", color:"white"}}
+      >
         created by <span> Loganand Palanisamy </span> | all rights reserved!
-      </h1>
+      </h4>
     </section>
   );
 }

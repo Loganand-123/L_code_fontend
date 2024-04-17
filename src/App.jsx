@@ -46,7 +46,8 @@ function App() {
         <div style={{ position: "relative" }}>
             <Nav1 />
             <Home />
-            <CardDetails/>
+          <CardDetails />
+          <Addarea />
             <CustomerReviews />
             <AboutUs />
             <Footer />

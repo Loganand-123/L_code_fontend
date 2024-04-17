@@ -8,19 +8,15 @@ import StarHalfIcon from "@mui/icons-material/StarHalf";
 function CustomerReviews() {
   return (
     <section className="review fb" id="review">
-     
       <h1 className="heading">
         our customers <span>reviews</span>
       </h1>
-     
 
       <div className="box-container">
-       
-
         <div className="box">
-          {/* <img src={pic1} alt="" /> */}
+          <img src="assets/image/pic1.png" alt="pic 1" />
           <h3>Angeline</h3>
-            <div className="stars">
+          <div className="stars">
             <StarIcon className="rs" color="warnimg" />
             <StarIcon className="rs" color="warnimg" />
             <StarIcon className="rs" color="warnimg" />
@@ -34,14 +30,14 @@ function CustomerReviews() {
         </div>
 
         <div className="box">
-          {/* <img src={pic2} alt="" /> */}
-            <h3>jack</h3>
+          <img src="assets/image/pic2.png" alt="pic 2" />
+          <h3>jack</h3>
           <div className="stars">
             <StarIcon className="rs" color="warnimg" />
             <StarIcon className="rs" color="warnimg" />
             <StarIcon className="rs" color="warnimg" />
             <StarIcon className="rs" color="warnimg" />
-            <StarHalfIcon className="rs"/>
+            <StarHalfIcon className="rs" />
           </div>
           <p>
             "I'm impressed! The food was delicious, arrived hot, and the
@@ -50,8 +46,8 @@ function CustomerReviews() {
         </div>
 
         <div className="box">
-          {/* <img src={pic3} alt="" /> */}
-            <h3>Nandy</h3>
+          <img src="assets/image/pic3.png" alt="pice 3" />
+          <h3>Nandy</h3>
           <div className="stars">
             <StarIcon className="rs" color="warnimg" />
             <StarIcon className="rs" color="warnimg" />
